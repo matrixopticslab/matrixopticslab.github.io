@@ -15,11 +15,11 @@ type: home_index
 heroBlock:
   block: hero
   content:
-    title: Matrix Optics Research Group
+    title: Matrix Optics Laboratory
 #    image:
 #      filename: research_topic.jpg
     text: |
-      Matrix Optics is dedicated to integrating random matrix theory with wavefront shaping and optical imaging for clinical medical applications.
+      Matrix optics is dedicated to integrating mathematics with optics, combining mathematical random matrix theory with optical wavefront shaping, optical imaging, optical computing, and quantum optics, while seamlessly merging with deep learning. It finds applications in medical optical imaging, extreme environment sensing, quantum computing, and other fields. Matrix optics provides a unified spectral representation of high-dimensional parameter spaces for geometric optics, wave optics, and quantum optics, resolving many longstanding challenges in traditional optical domains within its framework.
   
 heroSlideBlock:
   block: slider
