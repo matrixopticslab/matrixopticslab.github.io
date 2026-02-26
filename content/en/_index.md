@@ -85,7 +85,7 @@ publicationsBlock:
 #      publication_type: 'article-journal'
       publication_type: 
   design:
-    view: card
+    view: citation
     columns: '1'      
 
 teamsBlock:
