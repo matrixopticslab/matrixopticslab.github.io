@@ -15,7 +15,7 @@ role: MS 2025, now @ Tencent.com
 
 # Organizations/Affiliations
 organizations:
-  - name: MOL -> Tencent.com
+  - name: MOL
     url: '/'
 
 user_groups:
