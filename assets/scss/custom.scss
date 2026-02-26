@@ -1,6 +1,5 @@
 // Override this file to add your own SCSS styling.
 
-
 .user-icon-avatar {
   width: 150px;
   height: 150px;
@@ -39,8 +38,6 @@
   .card-simple .article-style {
     font-size: 0.8rem;
   }
-
-
 }
 
 @media (max-width: 478px) {
@@ -49,56 +46,53 @@
   }
 }
 
-/* --- Latest Publications 样式优化 --- */
+/* --- 新增：优化 Latest Publications 样式 --- */
 
 .view-citation {
-  display: flex;
-  flex-direction: column; /* 垂直堆叠内容 */
+  display: flex !important;
+  flex-direction: column !important; /* 强制垂直排列 */
   margin-bottom: 1.5rem;
 
-  /* 1. 强制论文题目显示在第一行 */
-  .article-title, 
-  a[href*="doi"], 
-  .pub-list-item > a:not(.avatar) {
+  /* 1. 强制论文题目在第一行（通过 order 属性） */
+  .article-title, a[href*="doi"] {
     order: 1 !important; 
     display: block;
-    font-weight: bold;
-    font-size: 1.05rem;
-    color: #333;
-    margin-bottom: 4px;
+    font-weight: bold !important;
+    font-size: 1.1rem !important;
+    color: #222 !important;
+    margin-bottom: 4px !important;
   }
 
-  /* 2. 作者信息显示在第二行 */
+  /* 2. 作者信息在第二行 */
   .article-metadata.li-cite-author {
     order: 2 !important;
-    font-size: 0.9rem;
-    color: #555;
-    margin-bottom: 2px;
+    font-size: 0.95rem !important;
+    color: #444 !important;
+    margin-bottom: 2px !important;
   }
 
-  /* 3. 期刊名称和日期显示在最后 */
+  /* 3. 期刊名称、期号、页号、时间在第三行 */
   .article-metadata:not(.li-cite-author) {
     order: 3 !important;
-    font-size: 0.85rem;
-    font-style: italic;
-    color: #777;
+    font-size: 0.9rem !important;
+    font-style: italic !important;
+    color: #666 !important;
   }
 
-  /* 4. 缩小论文列表中的预览图片 (featured.jpg) */
+  /* 4. 缩小论文列表中的图片 (featured.jpg) */
   img {
-    max-width: 180px !important; /* 限制图片最大宽度 */
-    max-height: 120px !important; /* 限制图片最大高度 */
+    max-width: 180px !important; /* 限制宽度 */
+    max-height: 120px !important; /* 限制高度 */
     height: auto !important;
     width: auto !important;
-    object-fit: contain;
+    object-fit: contain !important;
     border-radius: 4px;
-    margin-bottom: 10px;
-    order: 0; /* 如果您想让图片在题目上方，设为 0；如果在下方，可设为 4 */
+    margin-bottom: 10px !important;
+    order: 0 !important; /* 图片显示在题目上方 */
+  }
+
+  /* 隐藏左侧的小文件图标，让排版更整洁 */
+  .pub-icon {
+    display: none !important;
   }
 }
-
-/* 调整图标位置，防止干扰题目 */
-.pub-icon {
-  display: none; /* 如果觉得小图标碍事可以隐藏，或者调整为 order: 1 */
-}
-
