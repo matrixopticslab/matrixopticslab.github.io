@@ -23,9 +23,9 @@ url_source: ''
 url_video: ''
 
 # 出版物名称
-publication: "Applied Physics Letters"
+publication: "Applied Physics Letters Vol. 126, Issue 4, 043701"
 publication_short: ""
-page: "Vol. 126, Issue 4, 043701 (2025)"
+page: ""
 
 author_notes:
 #  - "Equal contribution"
