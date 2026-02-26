@@ -48,10 +48,57 @@
     margin: 0 auto;
   }
 }
-/* 限制论文列表中预览图的大小 */
-.pub-list-item img {
-  max-width: 200px ; /* 限制最大宽度 */
-  max-height: 150px ; /* 限制最大高度 */
-  object-fit: contain; /* 保持图片比例不被拉伸 */
-  margin-bottom: 10px;
+
+/* --- Latest Publications 样式优化 --- */
+
+.view-citation {
+  display: flex;
+  flex-direction: column; /* 垂直堆叠内容 */
+  margin-bottom: 1.5rem;
+
+  /* 1. 强制论文题目显示在第一行 */
+  .article-title, 
+  a[href*="doi"], 
+  .pub-list-item > a:not(.avatar) {
+    order: 1 !important; 
+    display: block;
+    font-weight: bold;
+    font-size: 1.05rem;
+    color: #333;
+    margin-bottom: 4px;
+  }
+
+  /* 2. 作者信息显示在第二行 */
+  .article-metadata.li-cite-author {
+    order: 2 !important;
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 2px;
+  }
+
+  /* 3. 期刊名称和日期显示在最后 */
+  .article-metadata:not(.li-cite-author) {
+    order: 3 !important;
+    font-size: 0.85rem;
+    font-style: italic;
+    color: #777;
+  }
+
+  /* 4. 缩小论文列表中的预览图片 (featured.jpg) */
+  img {
+    max-width: 180px !important; /* 限制图片最大宽度 */
+    max-height: 120px !important; /* 限制图片最大高度 */
+    height: auto !important;
+    width: auto !important;
+    object-fit: contain;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    order: 0; /* 如果您想让图片在题目上方，设为 0；如果在下方，可设为 4 */
+  }
 }
+
+/* 调整图标位置，防止干扰题目 */
+.pub-icon {
+  display: none; /* 如果觉得小图标碍事可以隐藏，或者调整为 order: 1 */
+}
+
