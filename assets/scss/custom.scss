@@ -66,7 +66,7 @@
   /* 2. 作者信息在第二行 */
   .article-metadata.li-cite-author {
     order: 2 !important;
-    font-size: 0.95rem !important;
+    font-size: 0.6rem !important;
     color: #444 !important;
     margin-bottom: 2px !important;
   }
@@ -74,7 +74,7 @@
   /* 3. 期刊名称、期号、页号、时间在第三行 */
   .article-metadata:not(.li-cite-author) {
     order: 3 !important;
-    font-size: 0.9rem !important;
+    font-size: 0.6rem !important;
     font-style: italic !important;
     color: #666 !important;
   }
