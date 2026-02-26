@@ -48,3 +48,16 @@
     margin: 0 auto;
   }
 }
+/* 限制论文列表中预览图的大小 */
+.pub-list-item img {
+  max-width: 200px !important; /* 限制最大宽度 */
+  max-height: 150px !important; /* 限制最大高度 */
+  object-fit: contain; /* 保持图片比例不被拉伸 */
+  margin-bottom: 10px;
+}
+
+/* 如果您想让图片和文字左右排列（可选） */
+.view-citation {
+  display: flex;
+  flex-direction: column; /* 依然保持题目在上，作者在下 */
+}
