@@ -30,7 +30,7 @@ heroSlideBlock:
       align: center
       background:
         image:
-          filename: research_topic.jpg
+          filename: group_slides/research_topic.jpg
           filters:
             brightness: 1
         position: right
