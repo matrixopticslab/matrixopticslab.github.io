@@ -82,8 +82,8 @@ publicationsBlock:
     filters:
       folders:
         - publication
-#      publication_type: 'article-journal'
-      publication_type: 
+      publication_type: 'article-journal'
+       
   design:
     view: card
     columns: '1'      
