@@ -19,7 +19,7 @@ organizations:
     url: '/'
 
 user_groups:
-  - Faculty
+  - Researchers
 
 
 # Is this the primary user of the site?
