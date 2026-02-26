@@ -59,7 +59,7 @@ newsBlock:
   block: collection
   content:
     title: Latest News
-    count: 3
+    count: 4
     filters:
       author: ''
       category: ''
@@ -78,14 +78,14 @@ publicationsBlock:
   block: collection
   content:
     title: Latest Publications
-    count: 5
+    count: 4
     filters:
       folders:
         - publication
 #      publication_type: 'article-journal'
       publication_type: 
   design:
-    view: citation
+    view: card
     columns: '1'      
 
 teamsBlock:
@@ -120,7 +120,7 @@ sections:
       title: Latest News
       subtitle:
       text:
-      count: 3
+      count: 4
       filters:
         author: ''
         category: ''
@@ -159,14 +159,14 @@ sections:
 #      title: Latest Preprints
       title: Latest Publications
       text: ""
-      count: 5
+      count: 4
       filters:
         folders:
           - publication
 #        publication_type: 'article'
         publication_type: 'article-journal'
     design:
-      view: citation
+      view: card
       columns: '1'
 
   - block: markdown
