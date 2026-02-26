@@ -11,7 +11,7 @@ authors:
   RuoyuChen
 
 # Role/position
-role: PhD 2023
+role: PhD 2023 now @ Siemens Healthineers
 
 # Organizations/Affiliations
 organizations:
