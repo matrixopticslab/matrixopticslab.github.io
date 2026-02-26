@@ -11,11 +11,11 @@ authors:
   JingyiYu
 
 # Role/position
-role: Multi-parameter tissue imaging
+role: MS 2024 now @ Medtronic
 
 # Organizations/Affiliations
 organizations:
-  - name: RMORG
+  - name: MOL
     url: '/'
 
 user_groups:
