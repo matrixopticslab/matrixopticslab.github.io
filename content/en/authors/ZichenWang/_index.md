@@ -15,7 +15,7 @@ role: MS 2024
 
 # Organizations/Affiliations
 organizations:
-  - name: RMORG
+  - name: MOL -> baidu.com
     url: '/'
 
 user_groups:
