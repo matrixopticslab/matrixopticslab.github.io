@@ -1,32 +1,24 @@
 ---
 title: "Effects of atropine on choroidal hemodynamics and VEGFA and HIF-1α expression in form-deprivation myopia guinea pigs"
 
-#authors:
-#  - Ruoyu Chen
-#  - Peng Miao
-#  - Shanbao Tong
-
-
 authors:
-  - Danyang Che
-  - Danlei Qiao
+  - Danyang Che#
+  - Danlei Qiao#
   - Lingfeng Lv
   - Yingjie Zhang
   - Yiting Cao
   - Fang Li
   - Shanbao Tong
-  - Peng Miao
-  - Jibo Zhou
+  - Peng Miao*
+  - Jibo Zhou*
 
 
 # Schedule page publish date (NOT publication's date).
-#publishDate: "2023-03-17T00:00:00Z"
 publishDate: "2024-12-18T00:00:00Z"
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
 # Enter a publication type from the CSL standard.
-#publication_types: ["article-journal"]
 publication_types: ["article-journal"]
 
 
@@ -46,7 +38,6 @@ url_video: ''
 
 
 # Publication name and optional abbreviated publication name.
-#publication: "*Journal of Source Themes, 1*(1)"
 publication: "Experimental eye research, 251, 110214."
 publication_short: ""
 
@@ -74,7 +65,7 @@ featured: false
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/jdD8gXaTZsc)'
+  caption: ''
   focal_point: ""
   preview_only: false
 
