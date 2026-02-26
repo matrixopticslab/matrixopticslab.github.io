@@ -17,7 +17,7 @@ user_groups:
   - Group Leader
 
 # Role/position
-role: Associate Prof.
+role: Associate Prof. & PI of Matrix Optics Laboratory
 
 # Organizations/Affiliations
 organizations:
