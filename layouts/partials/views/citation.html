@@ -1,58 +1,38 @@
 {{ $item := .item }}
 {{ $has_attachments := partial "functions/has_attachments" $item }}
 
-<div class="pub-list-item view-citation" style="margin-bottom: 1rem">
-  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-
-  {{/* APA Style */}}
-  {{ if eq (site.Params.publications.citation_style | default "apa") "apa" }}
-
-  <span class="article-metadata li-cite-author">
-    {{ partial "page_metadata_authors" $item }}
-  </span>
-  ({{- $item.Date.Format "2006" -}}).
-
-  {{/*<a href="{{ $item.RelPermalink }}">{{ $item.Title }}</a>.*/}}
-
-
-      {{ if $item.Params.url_external }} <a href="{{ $item.Params.url_external }}">{{ $item.Title }}</a>.
+<div class="pub-list-item view-citation" style="margin-bottom: 1.5rem; line-height: 1.6;">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true" style="float: left; margin-top: 4px;"></i>
+  <div style="margin-left: 25px;">
+    
+    <div class="article-title" style="font-weight: bold; font-size: 1.1rem; color: #333;">
+      {{ if $item.Params.url_external }}
+        <a href="{{ $item.Params.url_external }}" target="_blank" rel="noopener">{{ $item.Title }}</a>
       {{ else }}
-          {{ $item.Title }}
+        {{ $item.Title }}
+      {{ end }}
+    </div>
+
+    <div class="article-metadata li-cite-author" style="color: #555; margin: 4px 0;">
+      {{ partial "page_metadata_authors" $item }}
+    </div>
+
+    <div class="article-metadata" style="font-style: italic; color: #666;">
+      {{ if $item.Params.publication_short }}
+        {{- $item.Params.publication_short | markdownify -}}
+      {{ else if $item.Params.publication }}
+        {{- $item.Params.publication | markdownify -}}
       {{ end }}
 
-  {{ if $item.Params.publication_short }}
-    {{- $item.Params.publication_short | markdownify -}}
-    {{- with $item.Params.page }} <span>{{ . }}</span>{{ end }}.
-  {{ else if $item.Params.publication }}
-    {{- $item.Params.publication | markdownify -}}.
-  {{ end }}
-  <p>{{ partial "page_links" (dict "page" $item "is_list" 1) }}</p>
+      {{/* 如果您的 index.md 中定义了 volume, number 等字段 */}}
+      {{ with $item.Params.volume }} <span>, Vol. {{ . }}</span>{{ end }}
+      {{ with $item.Params.number }} <span>, No. {{ . }}</span>{{ end }}
+      {{ with $item.Params.page }} <span>, pp. {{ . }}</span>{{ end }}
+      <span>, {{ $item.Date.Format "2006" }}</span>
+    </div>
 
-  {{/* MLA Style */}}
-  {{ else }}
-
-  <span class="article-metadata li-cite-author">
-    {{ partial "page_metadata_authors" $item }}.
-  </span>
-  {{/*<a href="{{ $item.RelPermalink }}">{{ $item.Title }}</a>.*/}}
-
-    {{ if $item.Params.url_external }} <a href="{{ $item.Params.url_external }}">{{ $item.Title }}</a>.
-    {{ else }}
-        {{ $item.Title }}
-    {{ end }}
-
-  {{ if $item.Params.publication_short }}
-    {{- $item.Params.publication_short | markdownify -}},
-  {{ else if $item.Params.publication }}
-    {{- $item.Params.publication | markdownify -}},
-  {{ end }}
-  {{- $item.Date.Format "2006" -}}.
-
-  {{ if $has_attachments }}
-  <div class="btn-links">
-    {{ partial "page_links" (dict "page" $item "is_list" 1) }}
+    <div class="btn-links" style="margin-top: 8px;">
+      {{ partial "page_links" (dict "page" $item "is_list" 1) }}
+    </div>
   </div>
-  {{ end }}
-
-  {{ end }}
 </div>
