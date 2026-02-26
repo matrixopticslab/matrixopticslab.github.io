@@ -11,15 +11,15 @@ authors:
   YongGuo
 
 # Role/position
-role: PhD 2024
+role: Senior Scientist, PhD 2024
 
 # Organizations/Affiliations
 organizations:
-  - name: RMORG
+  - name: MOL
     url: '/'
 
 user_groups:
-  - Alumni
+  - Faculty
 
 
 # Is this the primary user of the site?
