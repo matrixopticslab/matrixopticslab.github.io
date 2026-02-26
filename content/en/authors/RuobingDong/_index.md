@@ -11,15 +11,15 @@ authors:
   RuobingDong
 
 # Role/position
-role: MS student
+role: MS 2025, now @ Tencent.com
 
 # Organizations/Affiliations
 organizations:
-  - name: RMORG
+  - name: MOL -> Tencent.com
     url: '/'
 
 user_groups:
-  - MS Student
+  - Alumni
 
 
 # Is this the primary user of the site?
