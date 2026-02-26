@@ -31,12 +31,12 @@ url_video: ''
 # 出版物名称
 publication: "Biomedical Optics Express"
 publication_short: "Biomed. Opt. Express"
-page: ""
+page: "Vol. 17, Issue 3, pp. 1427-1441 (2026)"
 
 author_notes:
-  - "Equal contribution"
-  - "Equal contribution"
-  - "Equal contribution"
+#  - "Equal contribution"
+#  - "Equal contribution"
+#  - "Equal contribution"
 
 date: "2026-02-18"
 doi: "https://doi.org/10.1364/BOE.582171"
