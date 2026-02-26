@@ -21,7 +21,7 @@ role: Associate Prof.
 
 # Organizations/Affiliations
 organizations:
-  - name: Random Matrix Optics Research Group
+  - name: PI of Matrix Optics Laboratory
     url: '/'
 
 
@@ -34,7 +34,7 @@ bio: My research interests include distributed robotics, mobile computing and pr
 
 experience:
   - 2019-Now 
-    - Research Associate Professor 
+    - Associate Professor 
     - School of Biomedical Engineering 
     - Shanghai Jiao Tong University
   - 2023-2023
@@ -68,19 +68,19 @@ experience:
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
 #   form "mailto:your-email@example.com" or "#contact" for contact widget.
-social:
-  - icon: envelope
-    icon_pack: fas
-    link: pengmiao@sjtu.edu.cn
+# social:
+#   - icon: envelope
+#     icon_pack: fas
+#     link: pengmiao@sjtu.edu.cn
   # - icon: twitter
   #   icon_pack: fab
   #   link: https://twitter.com/GeorgeCushen
   # - icon: google-scholar
   #   icon_pack: ai
   #   link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
-  - icon: github
-    icon_pack: fab
-    link: https://github.com/MPAPS2019
+#   - icon: github
+#     icon_pack: fab
+#     link: https://github.com/MPAPS2019
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 # - icon: cv
@@ -92,7 +92,7 @@ email: ''
 
 ---
 
-Peng Miao is a professor of biomedical engineering at the Shanghai Jiao Tong University.
+Peng Miao is an associate professor of biomedical engineering at the Shanghai Jiao Tong University.
 
 ### Education Record
 
@@ -119,7 +119,7 @@ Supervisor: Prof. Nitish Thakor
 
 ### Experience
 
-##### **Research Associate Professor**  
+##### **Associate Professor**  
 **School of Biomedical Engineering, Shanghai Jiao Tong University**  
 *2019 – Present*  
 
