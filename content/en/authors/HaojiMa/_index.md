@@ -11,15 +11,15 @@ authors:
   HaojiMa
 
 # Role/position
-role: MS student
+role: MS 2026
 
 # Organizations/Affiliations
 organizations:
-  - name: RMORG
+  - name: MOL-> ToDesk.com
     url: '/'
 
 user_groups:
-  - MS Student
+  - Alumni
 
 
 # Is this the primary user of the site?
