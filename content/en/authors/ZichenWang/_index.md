@@ -11,11 +11,11 @@ authors:
   ZichenWang
 
 # Role/position
-role: MS 2024
+role: MS 2024 now @ baidu.com
 
 # Organizations/Affiliations
 organizations:
-  - name: MOL -> baidu.com
+  - name: MOL
     url: '/'
 
 user_groups:
