@@ -11,11 +11,11 @@ authors:
   HaojiMa
 
 # Role/position
-role: MS 2026
+role: MS 2026 now @ ToDesk.com
 
 # Organizations/Affiliations
 organizations:
-  - name: MOL-> ToDesk.com
+  - name: MOL
     url: '/'
 
 user_groups:
