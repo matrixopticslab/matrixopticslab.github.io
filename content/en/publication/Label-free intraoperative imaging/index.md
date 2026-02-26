@@ -30,7 +30,7 @@ url_video: ''
 
 # 出版物名称
 publication: "Biomedical Optics Express"
-publication_short: "Biomed. Opt. Express"
+publication_short: ""
 page: "Vol. 17, Issue 3, pp. 1427-1441 (2026)"
 
 author_notes:
@@ -39,7 +39,7 @@ author_notes:
 #  - "Equal contribution"
 
 date: "2026-02-18"
-doi: "https://doi.org/10.1364/BOE.582171"
+doi: ""
 
 abstract: "Intraoperative visualization of hemodynamics is crucial for accurate diagnosis and informed surgical decision-making. We present a label-free cross-modal generation framework to synthesize mean transition time (MTT) maps from LSCI and WLI. MTT maps encode local hemodynamics, enabling artery-vein differentiation and flow direction inference. This approach offers a fast, efficient, and contrast-free solution for continuous intraoperative surgical guidance."
 
