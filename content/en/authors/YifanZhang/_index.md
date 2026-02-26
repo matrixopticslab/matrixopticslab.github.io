@@ -11,11 +11,11 @@ authors:
   YifanZhang
 
 # Role/position
-role: MS 2022
+role: MS 2022 now @ bytedance.com
 
 # Organizations/Affiliations
 organizations:
-  - name: RMORG
+  - name: MOL
     url: '/'
 
 user_groups:
