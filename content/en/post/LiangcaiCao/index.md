@@ -1,6 +1,6 @@
 ---
 title: "Computational Optics Wavefront Sensing and Phase Imaging Technology"
-date: 2026-02-26
+date: 2025-12-28
 image:
   focal_point: 'center'
 share: false
@@ -16,7 +16,7 @@ tags:
   - Deep Learning
 ---
 
-On February 26, 2026, we were honored to host **Prof. Liangcai Cao** from the Department of Precision Instruments at **Tsinghua University** for an academic seminar titled **"Computational Optics Wavefront Sensing and Phase Imaging Technology."**
+On December 28, 2025, we were honored to host **Prof. Liangcai Cao** from the Department of Precision Instruments at **Tsinghua University** for an academic seminar titled **"Computational Optics Wavefront Sensing and Phase Imaging Technology."**
 
 Prof. Cao is a renowned expert in holographic display and computational imaging. During his presentation, he shared his group's latest breakthroughs in integrating physical models with neural networks, specifically highlighting:
 
