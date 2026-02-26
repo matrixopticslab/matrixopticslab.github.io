@@ -3,10 +3,11 @@
 
 <div class="card-simple view-card" style="margin-bottom: 2rem;">
 
-  {{/* 1. 封面图片 - 如果需要缩小图片，可以在这里调整样式 */}}
-  {{ $resource := partial "functions/get_featured_image.html" $item }}
+  {{/* 使用更通用的方式获取图片，避免找不到 partial 的构建错误 */}}
+  {{ $resource := ($item.Resources.ByType "image").GetMatch "featured*" }}
+  
   {{ with $resource }}
-    {{ $image := .Resize "600x" }} {{/* 这里可以限制缩略图的生成宽度 */}}
+    {{ $image := .Resize "600x" }}
     <a href="{{ $item.RelPermalink }}">
       <img src="{{ $image.RelPermalink }}" class="article-banner" alt="{{ $item.Title }}" 
            style="max-height: 200px; width: 100%; object-fit: cover; border-radius: 4px;">
@@ -14,12 +15,10 @@
   {{ end }}
 
   <div class="card-body" style="padding: 15px 0;">
-    {{/* 2. 标题 */}}
     <h3 class="article-title mb-1 mt-0">
       <a href="{{ $item.RelPermalink }}">{{ $item.Title }}</a>
     </h3>
 
-    {{/* 3. 元数据：日期和作者 */}}
     <div class="article-metadata" style="font-size: 0.9rem; color: #666; margin-bottom: 8px;">
       <span class="article-date">
         {{ $item.Date.Format "Jan 2, 2006" }}
@@ -32,14 +31,12 @@
       {{ end }}
     </div>
 
-    {{/* 4. 摘要 (Summary) */}}
     {{ with $item.Summary }}
     <div class="article-style" style="font-size: 0.95rem; color: #444;">
       <p>{{ . | truncate 135 }}</p>
     </div>
     {{ end }}
 
-    {{/* 5. 链接（如有） */}}
     {{ if $has_attachments }}
     <div class="btn-links">
       {{ partial "page_links" (dict "page" $item "is_list" 1) }}
