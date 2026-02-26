@@ -11,11 +11,11 @@ authors:
   DenghuiZhao
 
 # Role/position
-role: MS 2023
+role: MS 2023 now @ United Imaging Intelligence
 
 # Organizations/Affiliations
 organizations:
-  - name: RMORG
+  - name: MOL
     url: '/'
 
 user_groups:
