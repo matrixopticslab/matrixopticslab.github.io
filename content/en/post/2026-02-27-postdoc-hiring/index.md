@@ -6,6 +6,7 @@ tags:
   - Recruitment
   - Postdoc
 featured: true
+weight: 1
 ---
 
 ### 招聘启事：上海交通大学矩阵光学实验室博士后
